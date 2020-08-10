@@ -12,12 +12,12 @@
 
     <img id="imgRabbit"  src="rabbit_240x200.jpeg" />
 
-    <canvas id="canvasLab" width="240" height="200"
-            style="border:1px solid #000000;"></canvas>
+    <canvas id="canvasLab" width="240" height="200" style="border:1px solid #000000;">
+    </canvas>
 
 
     <script>
-
+        $(document).ready(function() {
             var c = document.getElementById("canvasLab");
             var ctx = c.getContext("2d");
 
@@ -25,8 +25,7 @@
             ctx.stroke();
             ctx.clip();
             ctx.drawImage(imgRabbit, 0, 0);
-
-        
+        })
     </script>
 
 </body>

@@ -9,10 +9,10 @@
     <script>
         function sayHi(count, what = "~") {
             if(count <= 0) {
-                alert("Please key in bigger than \'0\'.")
+                alert("Please > \'0\'.")
             }
-            else if(count >= 21) {
-                alert("Please key in smaller than \'21\'.")
+            else if(count > 21) {
+                alert("Please <= \'21\'.")
             }
             else if(count == 4) {
                 alert("\'4\' is not a good number!");

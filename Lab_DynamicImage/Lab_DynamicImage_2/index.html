@@ -16,7 +16,9 @@
 
 <script type="text/javascript">
 
-setImage();
+
+setTimeout(setImage, 500);
+// setImage();
 
 function setImage()
 {
@@ -30,6 +32,7 @@ function setImage()
 	var iImage = Math.floor(Math.random() * img.length);
 	document.getElementById("imgs").src = img[iImage];
 	document.getElementById("imgshref").href = url[iImage];
+	setTimeout(setImage, 500);
 
 }
 

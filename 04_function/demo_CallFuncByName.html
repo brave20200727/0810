@@ -19,16 +19,15 @@
         // obj.123 = function.... XXX error
         // obj["123"] = function ... OOO OK
         
-        var s = "say" + "Hello"; // textBox1.value;
+        var s = "say" + "Hello"; // textBox1.value;        
+        if (s == "sayHello") {
+            obj.sayHello()
+        }
+        else if (s == "sayHi") {
+            obj.sayHi();
+        }
         
-        // if (s == "sayHello") {
-        //     obj.sayHello()
-        // }
-        // else if (s == "sayHi") {
-        //     obj.sayHi();
-        // }
-        
-        // obj["sayHi"]
+        obj["sayHi"]();
         obj[s]();
         
     </script>
