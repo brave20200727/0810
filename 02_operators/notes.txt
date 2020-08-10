@@ -1,0 +1,23 @@
+
+// mysql_fetch_assoc();
+
+row = readLine();
+while(row) {
+    if(row format is wrong) {
+        row = readLine();
+        continue; // go to AAA
+    }
+    if(row's data is not n/a) {
+        row = readLine();
+        continue; // go to AAA
+    }
+    //process one read line
+    row = readLine();
+}
+
+while(row = readLine()) {
+    if(row format is wrong) {
+        countinue;
+    }
+    // process one line
+}
