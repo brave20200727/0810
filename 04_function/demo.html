@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayHi(count, what = "~") {
+            if(count <= 0) {
+                alert("Please key in bigger than \'0\'.")
+            }
+            else if(count >= 21) {
+                alert("Please key in smaller than \'21\'.")
+            }
+            else if(count == 4) {
+                alert("\'4\' is not a good number!");
+            }
+            else {
+                let myHi = "Hi";
+                for (let i = 1; i <= count; i++) {
+                    myHi = myHi + what;
+                }
+                alert(myHi);
+            }
+        }
+
+        sayHi(21, "!");
+    </script>
+</body>
+</html>
