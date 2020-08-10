@@ -12,7 +12,31 @@
 
     <script>
 
+        // var obj = new Object();  // A
+        // var obj = {};  // B
+        // obj.firstName = "Wolfgang";
+        // obj.lastName = "Chien";
+        // obj.sayHello = function () {
+        //     debug.innerHTML += "Hello! <br>";	
+        // };
 
+        // debug.innerHTML = obj.firstName + "<br>";
+
+        // obj.sayHello();
+
+        // var obj = {
+        //     "firstName": "Wolfgang",
+        //     "lastName": "Chien"
+	    // };
+	    // debug.innerHTML = obj.firstName + " " + obj.lastName;
+
+        var objArray = [
+            {"firstName":"Derek", "lastName":"Jeter"}, 
+            {"firstName":"Jeremy", "lastName":"Lin"}, 
+            {"firstName":"Lionel", "lastName":"Messi"}
+        ];
+
+        debug.innerText = JSON.stringify(objArray);
 
     </script>
 
