@@ -58,18 +58,23 @@
         // debug.innerText = JSON.stringify(objArray);
 
         // my practice
-        var objArray = [
-            {"firstName": "Derek", "lastName": "Jeter"},
-            {"firstName": "Jeremy", "lastName": "Lin"},
-            {"firstName": "Lionel", "lastName": "Messi"}
-        ]
-        debug.innerText = JSON.stringify(objArray);
+        // var objArray = [
+        //     {"firstName": "Derek", "lastName": "Jeter"},
+        //     {"firstName": "Jeremy", "lastName": "Lin"},
+        //     {"firstName": "Lionel", "lastName": "Messi"}
+        // ]
+        // debug.innerText = JSON.stringify(objArray);
 
         //-------------------------------------------------------------------------------
 
         // var s = '[{"firstName":"Derek","lastName":"Jeter"},{"firstName":"Jeremy","lastName":"Lin"},{"firstName":"Lionel","lastName":"Messi"}]';
 	    // var objArray = JSON.parse(s);
-	    // debug.innerHTML = objArray[2].lastName + "<br>";
+        // debug.innerHTML = objArray[2].lastName + "<br>";
+        
+        var s = '[{"firstName": "Derek", "lastName": "Jeter"},{"firstName": "Jeremy", "lastName": "Lin"},{"firstName": "Lionel", "lastName": "Messi"}]';
+        var objArray = JSON.parse(s);
+        objArray.forEach(element => debug.innerHTML = debug.innerHTML + element.firstName + " " + element.lastName + "<br>");
+        // debug.innerText = objArray[0].firstName + " " + objArray[0].lastName;
 
         //-------------------------------------------------------------------------------
 
