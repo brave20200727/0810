@@ -25,11 +25,23 @@ test.onclick = function () {
     var sum = 0;
 
     // 你的任務程式...
-    
-    
-    
-
+    data.forEach(element => sum = sum + element);
+    // data.forEach(function(element) {
+    //     sum = sum + element
+    // });
+    // data.forEach(function(element) {
+    //     alert(element);
+    // });
     report.innerText = sum;
+
+    // let dataList = data.map(function(item) {
+    //     return item = item + 10;
+    // });
+    // let dataList = data.map((item) => {
+    //     return item = item + 10;
+    // });
+    // let dataList = data.map(item => item + 10);
+    // report.innerText = dataList.toString();
 
 
 }  // end of test.onclick

@@ -28,11 +28,10 @@ test.onclick = function () {
     //     return (x % 2 == 0);
     // });
 
-    var evenNumber = data.filter(x => x % 2 == 0);
-
-    report.innerText = evenNumber.toString();
-
-
+    // var evenNumber = data.filter(x => x % 2 == 0);
+    // report.innerText = evenNumber.toString();
+    var oddNumber = data.filter(x => x % 2 == 1);
+    report.innerText = oddNumber.toString();
 }  // end of test.onclick
 
 </script>

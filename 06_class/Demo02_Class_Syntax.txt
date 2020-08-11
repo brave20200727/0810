@@ -19,7 +19,7 @@ obj.makeSound();
 "use strict";
 class CAnimal {
     constructor() {
-        this._weight = 0;
+        this._weight = 0; // 利用加上_來表示不希望別人隨便讀取修改
     }
     get weight() {
         return this._weight;
