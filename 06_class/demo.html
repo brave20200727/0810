@@ -42,7 +42,6 @@
 	    // debug.innerHTML = obj.firstName + " " + obj.lastName;
 
         // my practice
-
         // var obj = {
         //     "firstName": "Brave",
         //     "lastName": "Chen"
@@ -57,6 +56,14 @@
         //     {"firstName":"Lionel", "lastName":"Messi"}
         // ];
         // debug.innerText = JSON.stringify(objArray);
+
+        // my practice
+        var objArray = [
+            {"firstName": "Derek", "lastName": "Jeter"},
+            {"firstName": "Jeremy", "lastName": "Lin"},
+            {"firstName": "Lionel", "lastName": "Messi"}
+        ]
+        debug.innerText = JSON.stringify(objArray);
 
         //-------------------------------------------------------------------------------
 
@@ -169,42 +176,81 @@
 
         //-------------------------------------------------------------------------------
 
-        class CAnimal {
-            constructor(weightValue) {
-                this._weight = 0;
-                this.weight = weightValue;
-            }
-            get weight() {
-                return this._weight;
-            }
-            set weight(weightValue) {
-                if (weightValue > 0) {
-                    this._weight = weightValue;
-                }
-            }
-            makeSound() {
-                alert("Animal: ...");
-            }
-        }
-        class CDog extends CAnimal {
-            constructor(weightValue, locationName) {
-                super(weightValue);
-                this.location = locationName;
-            }
-            get location() {
-                return this._location;
-            }
-            set location(locationName) {
-                this._location = locationName;
-            }
-            makeSound() {
-                super.makeSound();
-                alert("Dog barking!");
-            }
-        }
-        let obj = new CDog(3, "Taichung");
-        alert(obj.location);
-        obj.makeSound();
+        // class CAnimal {
+        //     constructor(weightValue) {
+        //         this._weight = 0;
+        //         this.weight = weightValue;
+        //     }
+        //     get weight() {
+        //         return this._weight;
+        //     }
+        //     set weight(weightValue) {
+        //         if (weightValue > 0) {
+        //             this._weight = weightValue;
+        //         }
+        //     }
+        //     makeSound() {
+        //         alert("Animal: ...");
+        //     }
+        // }
+        // class CDog extends CAnimal {
+        //     constructor(weightValue, locationName) {
+        //         super(weightValue);
+        //         this.location = locationName;
+        //     }
+        //     get location() {
+        //         return this._location;
+        //     }
+        //     set location(locationName) {
+        //         this._location = locationName;
+        //     }
+        //     makeSound() {
+        //         super.makeSound();
+        //         alert("Dog barking!");
+        //     }
+        // }
+        // let obj = new CDog(3, "Taichung");
+        // alert(obj.location);
+        // obj.makeSound();
+
+        // my practice
+        // class CAnimal {
+        //     constructor(weightValue) {
+        //         this._weight = 0;
+        //         this.weight = weightValue;
+        //     }
+        //     get weight() {
+        //         return this._weight;
+        //     }
+        //     set weight(weightValue) {
+        //         if (weightValue > 0) {
+        //             this._weight = weightValue;
+        //         }
+        //     }
+        //     makeSound() {
+        //         alert("Animal: ...");
+        //     }
+        // }
+
+        // class CDog extends CAnimal{
+        //     constructor(weightValue, locationName) {
+        //         super(weightValue);
+        //         this.location = locationName;
+        //     }
+        //     get location() {
+        //         return this._location;
+        //     }
+        //     set location(locationName) {
+        //         this._location = locationName;
+        //     }
+        //     makeSound() {
+        //         super.makeSound();
+        //         alert("Dog: Woof! Woof!");
+        //     }
+        // }
+        // let dog = new CDog(10, "Tainan");
+        // alert(dog.location);
+        // dog.makeSound();
 
     </script>
 
