@@ -14,7 +14,6 @@ function sad(data, timeCount) {
     })
 }
 
-
 async function living() {
     var total = 0;
     var result1 = await happy(200, 2000);
@@ -26,5 +25,3 @@ async function living() {
 }
 
 living();
-
-
