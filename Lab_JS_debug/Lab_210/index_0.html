@@ -48,15 +48,29 @@
         ];
 
     function sendMail(mailAddress) {
-        if (typeof mailAddress === 'undefined') {
-            $("#report").append("資料有缺<br>");
-            return;
+        // if (typeof mailAddress === 'undefined') {
+        //     $("#report").append("資料有缺<br>");
+        //     return;
+        // }
+        // $("#report").append(mailAddress.toString() + "<br>");
+
+        let errorNum = 0;
+        try {
+            errorNum = 666;
+            $("#report").append(mailAddress.toString() + "<br>");
         }
-        $("#report").append(mailAddress.toString() + "<br>");
+        catch(e) {
+            errorNum = -404;
+            $("#report").append(e.toString() + "<br>");
+        }
+        return errorNum;
     }
     
     for (i = 0; i < mailList.length; i++) {
-        sendMail(mailList[i]);
+        let retry = sendMail(mailList[i]);
+        if(retry == -404) {
+            sendMail(mailList[i]);
+        }
     }
     
     
