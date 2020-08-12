@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function longTimeWork1(workFine = true) {
+            return new Promise( (resolve, reject) => {
+                setTimeout( () => {
+                    (workFine) ? resolve("上班簽到～") : reject("遲到了！！！");
+                }, 1000);
+            })
+        }
+
+        function longTimeWork2(workFine = true) {
+            return new Promise( (resolve, reject) => {
+                setTimeout( () => {
+                    (workFine) ? resolve("下班謝謝～") : reject("太晚下班！！！");
+                }, 1000);
+            })
+        }
+
+        // async function usingLongTimeWork() {
+        //     var result = await longTimeWork(true, "test");
+        //     console.log(result);
+        // }
+
+        async function usingLongTimeWork() {
+            try {
+                var promise1 = await longTimeWork1(true);
+                var promise2 = await longTimeWork2(false);
+                console.log(promise1);
+                console.log(promise2);
+            }
+            catch (e) {
+                console.log(e);
+            }
+            
+        }
+
+        usingLongTimeWork();
+
+    </script>
+</body>
+</html>

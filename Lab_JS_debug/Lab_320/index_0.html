@@ -18,14 +18,16 @@
 
     <script>
 
-            var c = document.getElementById("canvasLab");
-            var ctx = c.getContext("2d");
+            window.onload = init;
+            function init() {
+                var c = document.getElementById("canvasLab");
+                var ctx = c.getContext("2d");
 
-            ctx.arc(120, 100, 90, 0, 2 * Math.PI);
-            ctx.stroke();
-            ctx.clip();
-            ctx.drawImage(imgRabbit, 0, 0);
-
+                ctx.arc(120, 100, 90, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.clip();
+                ctx.drawImage(imgRabbit, 0, 0);                
+            }
         
     </script>
 
